@@ -7,7 +7,6 @@ body {
     font-family: Arial;
     background: #1f1f5c;
     color: white;
-    text-align: center;
 }
 
 .navbar {
@@ -28,16 +27,18 @@ body {
 }
 
 .container {
-    margin-top: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
 }
 
 h1 {
     color: #00ffcc;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .botoes-container {
@@ -55,4 +56,9 @@ p {
     width: 200px;
     height: 200px;
     border-radius: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    color: #aaa;
 }
