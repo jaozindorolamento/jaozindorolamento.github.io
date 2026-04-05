@@ -69,21 +69,3 @@ p {
     text-decoration: none;
     border-radius: 5px;
 }
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 20px;
-    background-color: #00ffcc;
-    color: #000;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #00ccaa;
-    transform: scale(1.05);
-}
