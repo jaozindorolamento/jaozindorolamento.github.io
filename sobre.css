@@ -41,7 +41,8 @@ section {
     background: #333;
     padding: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
