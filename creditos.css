@@ -10,7 +10,7 @@ body {
     color: #fff;
 }
 
-/* Barra de navegação */
+
 .navbar {
     background: rgba(0, 0, 0, 0.9);
     padding: 15px 30px;
@@ -20,8 +20,8 @@ body {
 .menu {
     list-style: none;
     display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center;     /* centraliza verticalmente */
+    justify-content: center; /
+    align-items: center;     
     gap: 25px;
 }
 
@@ -53,7 +53,7 @@ body {
     color: #00ffcc;
 }
 
-/* Conteúdo central */
+
 .container {
     display: flex;
     justify-content: center;
