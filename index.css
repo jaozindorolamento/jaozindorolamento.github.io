@@ -37,7 +37,8 @@ body {
     background: #333;
     padding: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -52,6 +53,7 @@ h2 {
 
 p {
     font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .footer {
