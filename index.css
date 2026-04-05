@@ -18,7 +18,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .menu a {
@@ -27,22 +27,16 @@ body {
 }
 
 .container {
+    max-width: 900px;
+    margin: 40px auto;
     text-align: center;
-    margin-top: 40px;
 }
 
-.content {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-}
-
+.content,
 .box {
     background: #333;
     padding: 15px;
-    margin: 10px 0;
+    margin-bottom: 15px;
     border-radius: 10px;
 }
 
@@ -53,7 +47,7 @@ h1 {
 
 h2 {
     color: #00ffcc;
-    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -61,7 +55,6 @@ p {
 }
 
 .footer {
-    text-align: center;
     margin-top: 20px;
     color: #aaa;
 }
