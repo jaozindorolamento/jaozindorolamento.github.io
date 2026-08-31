@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onde Tem? - Encontre o produto que você precisa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">OT</span>
+        <span class="logo-text">Onde Tem?</span>
+      </div>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-link">Entrar</a>
+        <a href="login.html" class="btn-primary-nav">Criar conta</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-container">
+      <h1 class="hero-title">Encontre o produto que você precisa</h1>
+      <p class="hero-subtitle">Pesquise em todos os mercados da região de uma vez só.</p>
+
+      <!-- SEARCH BAR -->
+      <div class="search-box">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" placeholder="Ex: leite, arroz, detergente..." class="search-input">
+      </div>
+
+      <!-- LOCATION BUTTON -->
+      <button class="btn-location">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="2" x2="12" y2="6"></line>
+          <line x1="12" y1="18" x2="12" y2="22"></line>
+          <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+          <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+        </svg>
+        Usar minha localização para ordenar lojas
+      </button>
+
+      <!-- STORE FILTERS -->
+      <div class="filter-section">
+        <span class="filter-label">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          </svg>
+          FILTRAR POR LOJA
+        </span>
+        <div class="pills-container">
+          <button class="pill active">Todas as lojas</button>
+          <button class="pill">Supermercado BomPreço ▾</button>
+          <button class="pill">Extra Hiper ▾</button>
+          <button class="pill">Pão de Açúcar ▾</button>
+          <button class="pill">Atacadão ▾</button>
+          <button class="pill">Carrefour Hiper ▾</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID SECTION -->
+  <main class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Todos os produtos</h2>
+        <span class="badge-count">262 produtos</span>
+      </div>
+
+      <div class="products-grid">
+        <!-- CARD 1 -->
+        <div class="product-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=300&auto=format&fit=crop&q=80" alt="Leite Integral Italac">
+          </div>
+          <div class="card-content">
+            <h3 class="product-name">Leite Integral Italac</h3>
+            <span class="product-brand">Italac</span>
+            <span class="product-category tag-lat">Laticínios</span>
+            <div class="card-footer">
+              <span class="product-price">R$ 4.99</span>
+              <span class="store-name">🏪 Supermerc...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="product-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&auto=format&fit=crop&q=80" alt="Arroz Branco Camil">
+          </div>
+          <div class="card-content">
+            <h3 class="product-name">Arroz Branco Camil</h3>
+            <span class="product-brand">Camil</span>
+            <span class="product-category tag-graos">Grãos e Cereais</span>
+            <div class="card-footer">
+              <span class="product-price">R$ 22.90</span>
+              <span class="store-name">🏪 Supermerc...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="product-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1551462147-ff29053bfc14?w=300&auto=format&fit=crop&q=80" alt="Feijão Carioca Camil">
+          </div>
+          <div class="card-content">
+            <h3 class="product-name">Feijão Carioca Camil</h3>
+            <span class="product-brand">Camil</span>
+            <span class="product-category tag-graos">Grãos e Cereais</span>
+            <div class="card-footer">
+              <span class="product-price">R$ 8.49</span>
+              <span class="store-name">🏪 Supermerc...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="product-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=300&auto=format&fit=crop&q=80" alt="Óleo de Soja Liza">
+          </div>
+          <div class="card-content">
+            <h3 class="product-name">Óleo de Soja Liza</h3>
+            <span class="product-brand">Liza</span>
+            <span class="product-category tag-oleo">Óleos e Gorduras</span>
+            <div class="card-footer">
+              <span class="product-price">R$ 5.89</span>
+              <span class="store-name">🏪 Supermerc...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="product-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=300&auto=format&fit=crop&q=80" alt="Café Pilão Torrado e Moído">
+          </div>
+          <div class="card-content">
+            <h3 class="product-name">Café Pilão Torrado e Moído</h3>
+            <span class="product-brand">Pilão</span>
+            <span class="product-category tag-beb">Bebidas</span>
+            <div class="card-footer">
+              <span class="product-price">R$ 14.99</span>
+              <span class="store-name">🏪 Supermerc...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 (Esgotado) -->
+        <div class="product-card">
+          <div class="card-img-wrapper">
+            <span class="badge-esgotado">Esgotado</span>
+            <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=300&auto=format&fit=crop&q=80" alt="Sabão em Pó OMO">
+          </div>
+          <div class="card-content">
+            <h3 class="product-name">Sabão em Pó OMO</h3>
+            <span class="product-brand">OMO</span>
+            <span class="product-category tag-limp">Limpeza</span>
+            <div class="card-footer">
+              <span class="product-price">R$ 32.90</span>
+              <span class="store-name">🏪 Supermerc...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="product-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=300&auto=format&fit=crop&q=80" alt="Leite Integral Italac">
+          </div>
+          <div class="card-content">
+            <h3 class="product-name">Leite Integral Italac</h3>
+            <span class="product-brand">Italac</span>
+            <span class="product-category tag-lat">Laticínios</span>
+            <div class="card-footer">
+              <span class="product-price">R$ 4.79</span>
+              <span class="store-name">🏪 Extra Hiper</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="product-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&auto=format&fit=crop&q=80" alt="Arroz Branco Camil">
+          </div>
+          <div class="card-content">
+            <h3 class="product-name">Arroz Branco Camil</h3>
+            <span class="product-brand">Camil</span>
+            <span class="product-category tag-graos">Grãos e Cereais</span>
+            <div class="card-footer">
+              <span class="product-price">R$ 21.50</span>
+              <span class="store-name">🏪 Extra Hiper</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="product-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3d5d6281270?w=300&auto=format&fit=crop&q=80" alt="Macarrão Penne Barilla">
+          </div>
+          <div class="card-content">
+            <h3 class="product-name">Macarrão Penne Barilla</h3>
+            <span class="product-brand">Barilla</span>
+            <span class="product-category tag-massas">Massas e Farinhas</span>
+            <div class="card-footer">
+              <span class="product-price">R$ 6.99</span>
+              <span class="store-name">🏪 Extra Hiper</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
