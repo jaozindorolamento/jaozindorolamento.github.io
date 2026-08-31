@@ -1,12 +1,13 @@
-:root {
-  --primary: #4f46e5;
-  --primary-hover: #4338ca;
-  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+::root {
+  --primary: #10b981; 
+  --primary-hover: #059669; 
+  --bg-gradient: linear-gradient(135deg, #064e3b 0%, #022c22 50%, #065f46 100%);
   --card-bg: rgba(255, 255, 255, 0.95);
   --text-main: #0f172a;
   --text-muted: #64748b;
   --border-color: #e2e8f0;
-  --focus-ring: rgba(79, 70, 229, 0.25);
+  --focus-ring: rgba(16, 185, 129, 0.25);
+}
 }
 
 * {
