@@ -187,4 +187,44 @@ function autenticarGoogle() {
     alert('Autenticação via Google realizada com sucesso!');
     fecharTelaLogin();
 }
+document.addEventListener('DOMContentLoaded', () => {
+  // Seleciona os botões de filtro de loja
+  const storePills = document.querySelectorAll('.pills-container .pill');
+  // Seleciona todos os cards de produto
+  const productCards = document.querySelectorAll('.product-card');
+
+  storePills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      // 1. Remove a classe 'active' de todos os botões
+      storePills.forEach(p => p.classList.remove('active'));
+      
+      // 2. Adiciona a classe 'active' apenas no botão clicado
+      pill.classList.add('active');
+
+      // 3. Obtém o nome da loja limpo (removendo a seta " ▾")
+      const selectedStore = pill.textContent.replace(' ▾', '').trim();
+
+      // 4. Filtra a exibição dos produtos
+      productCards.forEach(card => {
+        const storeNameElement = card.querySelector('.store-name');
+        const storeName = storeNameElement ? storeNameElement.textContent : '';
+
+        if (selectedStore === 'Todas as lojas') {
+          card.style.display = 'block'; // Mostra todos os produtos
+        } else {
+          // Compara se o nome da loja no card bate com a loja selecionada
+          // Usamos slice/includes para lidar com os nomes encurtados com "..."
+          const normalizedSelected = selectedStore.toLowerCase();
+          const normalizedCardStore = storeName.toLowerCase().replace('🏪', '').trim();
+
+          if (normalizedCardStore.includes(normalizedSelected.slice(0, 8))) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        }
+      });
+    });
+  });
+});
 
